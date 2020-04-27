@@ -1,0 +1,49 @@
+footer {
+    background-color: #346151;
+    color: #ffffff;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0rem 0 .5rem 0;
+}
+
+footer h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer ul.socially > .item {
+    display: inline;
+}
+
+footer .plate-for-map {
+    background: #2e5044;
+    width: 100%;
+    height: 369px;
+}
+
+footer .socially > .item:not(:first-child) {
+    margin-left: 0.5rem;
+}
+
+footer .socially > .item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+footer .row {
+    margin-bottom: 0;
+}

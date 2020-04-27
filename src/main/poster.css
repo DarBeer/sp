@@ -1,0 +1,137 @@
+.poster {
+    cursor: default;
+    margin-top: 95px;
+    background: linear-gradient(#34615183, #34615183), url('../img/home-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(100vh - 95px);
+}
+
+.poster .content {
+    background-color: #a6dbce71;
+    color: #ffffff;
+    width: 500px;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster .content > h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.6em;
+}
+
+.poster .content > p {
+    margin: 1rem 0 1rem 0;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.poster .button {
+    padding: 1em;
+    text-align: center;
+    background: #195f30;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 1em 0 1em 0;
+    text-decoration: none;
+}
+
+.poster .button:hover {
+    background: #1a9b45;
+    box-shadow: 0px 0px 5px 2px #00000036;
+}
+
+.poster a.down-button {
+    position: absolute;
+    color: #ffffff;
+    width: 75px;
+    height: 75px;
+    padding: 16px;
+    margin: 0;
+    border-radius: 50%;
+    background: #54976b;
+    top: calc(100vh - 75px - 1rem);
+    left: calc(50vw - 37.5px);
+}
+
+.poster a.down-button:hover {
+    background: #1a9b45;
+    box-shadow: 0px 0px 5px 2px #00000036;
+}
+
+.poster .content .icons {
+    margin: 1rem 0 1rem 0;
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+
+.poster .content .icons .item {
+    width: 33%;
+    padding: .3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+    .poster .content {
+        float: none;
+        margin: auto auto;
+        width: 100%;
+        align-self: flex-end;
+    }
+
+    .poster .wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .poster .content {
+        float: none;
+        margin: 0 auto;
+        align-self: flex-end;
+    }
+
+    .poster .wrapper {
+        padding: 0;
+    }
+
+    .poster .bottom {
+        display: flex;
+        height: calc(100vh - 145px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .poster .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .poster .content {
+        margin-top: 10vh;
+        background: #54976b;
+        box-shadow: 0px 0px 10px 3px #00000036;
+    }
+
+    .poster .button {
+        background: #ffffff;
+        color: #54976b;
+    }
+
+    .poster .button:hover {
+        background: #ffffff;
+        color: #1da13e;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .poster {
+        background-size: 100vw;
+    }
+}
